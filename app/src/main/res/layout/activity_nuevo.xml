@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/viewNombre"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informacion de trabajo:" />
+
+        <EditText
+            android:id="@+id/txtInformacionTrabajo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/viewInfo"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono" />
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:labelFor="@+id/viewTelefono"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico" />
+
+        <EditText
+            android:id="@+id/txtCorreoElectronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/viewCorreo"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnGuarda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Guardar"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
